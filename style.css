@@ -8,11 +8,16 @@ html {
 }
 
 body {
+  min-height: 100vh; /* Ensure the body takes at least the full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   font-family: 'Karla', sans-serif;
-  line-height: 1.3;
   background-color: var(--ltgray);
   color: var(--grayblue);
-  padding: var(--paddingX);
+  /*line-height: 1.3;
+  padding: var(--paddingX); */
 }
 
 :root {
@@ -58,7 +63,6 @@ p {
 }
 
 @media only screen and (min-width: 62.5em) {
-
   .price {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
